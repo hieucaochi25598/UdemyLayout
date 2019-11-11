@@ -1,0 +1,25 @@
+
+.feedBack__content{
+    width: 90%;
+    margin: 0 auto;
+    .feedBack__content__items{
+        padding: $pd-2*3 $pd-2;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px 0 rgba(20,23,28,.15);
+        background-color: white;
+        span{
+            @include styleText($fs-3, $fw-normal, $color-black-0);
+        }
+        i{
+            @include styleText($fs-3, $fw-bold, $color-white-0);
+            margin-right: $mg-2;
+            margin-bottom: $mg-2;
+            height: 45px;
+            width: 45px;
+            line-height: 45px;
+            text-align: center;
+            background-color: $color-black-0;
+            border-radius: 50%;
+        }
+    }
+}

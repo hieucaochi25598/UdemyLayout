@@ -1,0 +1,16 @@
+.topCategories__content{
+    width: 90%;
+    margin: 0 auto;
+    h2{
+        margin: $mg-2 0;
+    }
+    .topCategories__content__item__type{
+        box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+        margin-bottom: $mg-2;
+        padding: $pd-2 $pd-1;
+        transition: all 0.5s;
+        &:hover{
+            box-shadow: 0 2px 8px 6px rgba(20,23,28,.15);
+        }
+    }
+}

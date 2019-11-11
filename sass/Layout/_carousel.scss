@@ -1,0 +1,31 @@
+.udemy-carousel
+{
+    background-image: url('../img/cover.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    .udemy-carousel__content{
+        position: absolute;
+        width: 30%;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        color: $color-white-0;
+            h2{
+                @include styleText($fs-5, $fw-bold-1, $color-white-0);
+            }
+            p{
+                @include styleText($fs-2, $fw-normal, $color-white-0);
+            }
+            .searchForm
+            {
+                @include styleSearch($color-white-0, $color-white-0, $color-white-0, $color-white-0);
+                input{
+                    padding: $pd-1;
+                    font-size: $fs-2;
+                }
+            }
+    }
+}

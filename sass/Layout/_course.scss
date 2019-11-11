@@ -1,0 +1,76 @@
+.courses{
+    margin-top: $mg-2;
+    .courses__content
+    {
+        width: 90%;
+        margin: auto;
+        .courses__intro{
+            padding-top: 4rem;
+            h2{
+                @include styleText($fs-4 - 4, $fw-normal, $color-black-0);
+            }
+        }
+        .myTab{
+            .nav{
+                .nav-item{
+                    .nav-link.active{
+                        border-bottom: 5px solid $color-blue;
+                    }
+                    .nav-link{
+                        @include styleText($fs-0 ,$fw-normal, $color-black-0);
+                        border: none;
+                    }
+                }
+            }
+            .tab-content{
+                position: relative;
+                margin-top: $mg-2;
+                .card{
+                    transition: all 0.5s;
+                    &:hover{
+                        box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+                        .my-background{
+                            background-color: rgba(0, 0, 0, 0.6);
+                        }
+                    }
+                    .my-img{  
+                        position: relative;
+                        .my-background{
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            transition: all 0.5s;
+                        }
+                    }
+                    .card-title{
+                     @include styleText($fs-0, $fw-bold, $color-black-0);
+                    }
+                    .card-text{
+                         @include styleText($fs-1, $fw-normal, $color-gray-4);
+                    }
+                    .rating
+                    {
+                    .rating__star
+                    {
+                     @include styleText($fs-1, $fw-normal, $color-yellow);
+                        margin: $mg-0;
+                    }
+                    span:nth-child(2){
+                        @include styleText($fs-1, $fw-bold, $color-gray-4);
+                     margin: $mg-0;
+                    }
+                    span:last-child{
+                        @include styleText($fs-1, $fw-normal, $color-gray-4);
+                        margin: $mg-0;
+                    }
+                    }
+                    .price{
+                        text-align: right;
+                        @include styleText($fs-2, $fw-bold, black);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+
+.trusted{
+    .trusted__content{
+        padding: $pd-2*2;
+    h4{
+        @include styleText($fs-0, $fw-normal, $color-black-0);
+    }
+    .trusted__content__text__item{
+        padding: $pd-2*2 $pd-2*9;
+        h3{
+            @include styleText($fs-2, $fw-normal, $color-black-0);
+        }
+        button{
+            border-radius: unset;
+            @include styleButton($color-red-0, $color-red-0, $pd-1, $pd-2);
+            &:hover{
+                @include styleButtonHover($color-red-2, $color-white-0, $color-red-2);
+            }
+        }
+    }
+}
+}
+

@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px; }
+
+.owl-prev, .owl-next {
+  position: absolute;
+  left: -3%;
+  top: 28%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  outline: none !important;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+  z-index: 10; }
+  .owl-prev span, .owl-next span {
+    font-size: 40px;
+    font-weight: normal;
+    color: #007791;
+    line-height: 0.6; }
+
+.owl-next {
+  left: unset;
+  right: -3%; }
+
+.owl-carousel .owl-nav.disabled {
+  display: block; }
+
+.ude-btnWhite {
+  background-color: #fff;
+  border: 1px solid #29303b;
+  padding: 11px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #686f7a; }
+  .ude-btnWhite:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black; }
+
+.ude-btnRed {
+  background-color: #ec5252;
+  border: 1px solid #ec5252;
+  padding: 11px 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff; }
+  .ude-btnRed:hover {
+    background-color: #992337;
+    color: #fff;
+    border: 1px solid #992337; }
+
+.header {
+  font-size: 13px;
+  font-weight: normal;
+  color: #505763; }
+  .header .navbar {
+    width: 95%;
+    margin: 0 auto; }
+  .header .header-left {
+    display: flex;
+    align-items: center; }
+    .header .header-left .navbar-brand {
+      flex-grow: 0.5; }
+      .header .header-left .navbar-brand img {
+        width: 110px; }
+    .header .header-left .categories {
+      flex-grow: 0.5; }
+    .header .header-left .searchForm {
+      flex-grow: 6; }
+      .header .header-left .searchForm .input-group {
+        background-color: #f2f3f5;
+        border: 1px solid #f2f3f5; }
+        .header .header-left .searchForm .input-group .form-control {
+          background-color: transparent;
+          border: 1px solid transparent; }
+          .header .header-left .searchForm .input-group .form-control:focus {
+            outline: none;
+            box-shadow: none;
+            background-color: #fff;
+            border-top: 1px solid #f2f3f5;
+            border-bottom: 1px solid #f2f3f5;
+            border-left: 1px solid #f2f3f5; }
+            .header .header-left .searchForm .input-group .form-control:focus + .input-group-append .input-group-text {
+              background-color: #fff;
+              border-top: 1px solid #f2f3f5;
+              border-bottom: 1px solid #f2f3f5;
+              border-right: 1px solid #f2f3f5; }
+              .header .header-left .searchForm .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+                background-color: #ec5252;
+                color: #fff;
+                border: 1px solid #ec5252; }
+        .header .header-left .searchForm .input-group .input-group-text {
+          background-color: transparent;
+          border: 1px solid transparent;
+          color: #ec5252; }
+          .header .header-left .searchForm .input-group .input-group-text:hover {
+            background-color: #ec5252;
+            color: #fff; }
+
+.udemy-carousel {
+  background-image: url("../img/cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative; }
+  .udemy-carousel .udemy-carousel__content {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff; }
+    .udemy-carousel .udemy-carousel__content h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff; }
+    .udemy-carousel .udemy-carousel__content p {
+      font-size: 20px;
+      font-weight: normal;
+      color: #fff; }
+    .udemy-carousel .udemy-carousel__content .searchForm .input-group {
+      background-color: #fff;
+      border: 1px solid #fff; }
+      .udemy-carousel .udemy-carousel__content .searchForm .input-group .form-control {
+        background-color: transparent;
+        border: 1px solid transparent; }
+        .udemy-carousel .udemy-carousel__content .searchForm .input-group .form-control:focus {
+          outline: none;
+          box-shadow: none;
+          background-color: #fff;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          border-left: 1px solid #fff; }
+          .udemy-carousel .udemy-carousel__content .searchForm .input-group .form-control:focus + .input-group-append .input-group-text {
+            background-color: #fff;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff; }
+            .udemy-carousel .udemy-carousel__content .searchForm .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+              background-color: #ec5252;
+              color: #fff;
+              border: 1px solid #ec5252; }
+      .udemy-carousel .udemy-carousel__content .searchForm .input-group .input-group-text {
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: #ec5252; }
+        .udemy-carousel .udemy-carousel__content .searchForm .input-group .input-group-text:hover {
+          background-color: #ec5252;
+          color: #fff; }
+    .udemy-carousel .udemy-carousel__content .searchForm input {
+      padding: 10px;
+      font-size: 20px; }
+
+.intro {
+  background: linear-gradient(to right, #521822, #ec5252); }
+  .intro .intro__content {
+    width: 90%;
+    margin: 0 auto; }
+    .intro .intro__content .intro_item {
+      padding: 10px;
+      align-items: center; }
+      .intro .intro__content .intro_item .icon {
+        font-size: 50px;
+        font-weight: bold;
+        color: #fff;
+        margin-right: 25px; }
+      .intro .intro__content .intro_item .icon__content p:first-child {
+        font-size: 17px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 0; }
+      .intro .intro__content .intro_item .icon__content p:last-child {
+        font-size: 15px;
+        font-weight: normal;
+        color: #fff;
+        margin-bottom: 0; }
+
+.courses {
+  margin-top: 25px; }
+  .courses .courses__content {
+    width: 90%;
+    margin: auto; }
+    .courses .courses__content .courses__intro {
+      padding-top: 4rem; }
+      .courses .courses__content .courses__intro h2 {
+        font-size: 36px;
+        font-weight: normal;
+        color: #29303b; }
+    .courses .courses__content .myTab .nav .nav-item .nav-link.active {
+      border-bottom: 5px solid #007791; }
+    .courses .courses__content .myTab .nav .nav-item .nav-link {
+      font-size: 15px;
+      font-weight: normal;
+      color: #29303b;
+      border: none; }
+    .courses .courses__content .myTab .tab-content {
+      position: relative;
+      margin-top: 25px; }
+      .courses .courses__content .myTab .tab-content .card {
+        transition: all 0.5s; }
+        .courses .courses__content .myTab .tab-content .card:hover {
+          box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15); }
+          .courses .courses__content .myTab .tab-content .card:hover .my-background {
+            background-color: rgba(0, 0, 0, 0.6); }
+        .courses .courses__content .myTab .tab-content .card .my-img {
+          position: relative; }
+          .courses .courses__content .myTab .tab-content .card .my-img .my-background {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s; }
+        .courses .courses__content .myTab .tab-content .card .card-title {
+          font-size: 15px;
+          font-weight: bold;
+          color: #29303b; }
+        .courses .courses__content .myTab .tab-content .card .card-text {
+          font-size: 13px;
+          font-weight: normal;
+          color: #686f7a; }
+        .courses .courses__content .myTab .tab-content .card .rating .rating__star {
+          font-size: 13px;
+          font-weight: normal;
+          color: #F4C150;
+          margin: 2px; }
+        .courses .courses__content .myTab .tab-content .card .rating span:nth-child(2) {
+          font-size: 13px;
+          font-weight: bold;
+          color: #686f7a;
+          margin: 2px; }
+        .courses .courses__content .myTab .tab-content .card .rating span:last-child {
+          font-size: 13px;
+          font-weight: normal;
+          color: #686f7a;
+          margin: 2px; }
+        .courses .courses__content .myTab .tab-content .card .price {
+          text-align: right;
+          font-size: 20px;
+          font-weight: bold;
+          color: black; }
+
+.studentViewing {
+  margin-top: 25px; }
+  .studentViewing .student__content {
+    width: 90%;
+    margin: 0 auto; }
+    .studentViewing .student__content .card {
+      transition: all 0.5s; }
+      .studentViewing .student__content .card:hover {
+        box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15); }
+        .studentViewing .student__content .card:hover .my-background {
+          background-color: rgba(0, 0, 0, 0.6); }
+      .studentViewing .student__content .card .my-img {
+        position: relative; }
+        .studentViewing .student__content .card .my-img .my-background {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s; }
+      .studentViewing .student__content .card .card-title {
+        font-size: 15px;
+        font-weight: bold;
+        color: #29303b; }
+      .studentViewing .student__content .card .card-text {
+        font-size: 13px;
+        font-weight: normal;
+        color: #686f7a; }
+      .studentViewing .student__content .card .rating .rating__star {
+        font-size: 13px;
+        font-weight: normal;
+        color: #F4C150;
+        margin: 2px; }
+      .studentViewing .student__content .card .rating span:nth-child(2) {
+        font-size: 13px;
+        font-weight: bold;
+        color: #686f7a;
+        margin: 2px; }
+      .studentViewing .student__content .card .rating span:last-child {
+        font-size: 13px;
+        font-weight: normal;
+        color: #686f7a;
+        margin: 2px; }
+      .studentViewing .student__content .card .price {
+        text-align: right;
+        font-size: 20px;
+        font-weight: bold;
+        color: black; }
+
+.recommendations {
+  border-top: 10px solid #6e1a52;
+  margin-top: 50px;
+  padding: 50px;
+  background-color: #29303b; }
+  .recommendations i {
+    font-size: 36px;
+    font-weight: normal;
+    color: #fff; }
+  .recommendations .recommendations__start {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .recommendations .recommendations__start h3 {
+      font-size: 24px;
+      font-weight: normal;
+      color: #fff; }
+    .recommendations .recommendations__start p {
+      font-size: 15px;
+      font-weight: normal;
+      color: #fff; }
+    .recommendations .recommendations__start button {
+      border-radius: unset;
+      background-color: #ec5252;
+      border: 1px solid #ec5252;
+      padding: 10px 20px; }
+      .recommendations .recommendations__start button:hover {
+        background-color: #992337;
+        color: #fff;
+        border: 1px solid #992337; }
+
+.topCategories__content {
+  width: 90%;
+  margin: 0 auto; }
+  .topCategories__content h2 {
+    margin: 25px 0; }
+  .topCategories__content .topCategories__content__item__type {
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+    margin-bottom: 25px;
+    padding: 20px 10px;
+    transition: all 0.5s; }
+    .topCategories__content .topCategories__content__item__type:hover {
+      box-shadow: 0 2px 8px 6px rgba(20, 23, 28, 0.15); }
+
+.feedBack__content {
+  width: 90%;
+  margin: 0 auto; }
+  .feedBack__content .feedBack__content__items {
+    padding: 60px 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(20, 23, 28, 0.15);
+    background-color: white; }
+    .feedBack__content .feedBack__content__items span {
+      font-size: 24px;
+      font-weight: normal;
+      color: #29303b; }
+    .feedBack__content .feedBack__content__items i {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      margin-right: 25px;
+      margin-bottom: 25px;
+      height: 45px;
+      width: 45px;
+      line-height: 45px;
+      text-align: center;
+      background-color: #29303b;
+      border-radius: 50%; }
+
+.trusted .trusted__content {
+  padding: 100px; }
+  .trusted .trusted__content h4 {
+    font-size: 15px;
+    font-weight: normal;
+    color: #29303b; }
+  .trusted .trusted__content .trusted__content__text__item {
+    padding: 0 180px; }
+    .trusted .trusted__content .trusted__content__text__item button {
+      border-radius: unset;
+      background-color: #ec5252;
+      border: 1px solid #ec5252;
+      padding: 10px 20px; }
+      .trusted .trusted__content .trusted__content__text__item button:hover {
+        background-color: #992337;
+        color: #fff;
+        border: 1px solid #992337; }
+
+/*# sourceMappingURL=main.css.map */

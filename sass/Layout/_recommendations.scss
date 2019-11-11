@@ -1,0 +1,27 @@
+
+.recommendations{
+    border-top: 10px solid $color-purple;
+    margin-top: $mg-2 * 2;
+    padding: 50px;
+    background-color: $color-black-0;
+    i{
+        @include styleText($fs-5, $fw-normal, $color-white-0);
+    }
+    .recommendations__start{
+        margin-top: 50px;
+        margin-bottom: $mg-2 * 2;
+        h3{
+            @include styleText($fs-3, $fw-normal, $color-white-0);
+        }
+        p{
+            @include styleText($fs-0, $fw-normal, $color-white-0);
+        }
+        button{
+            border-radius: unset;
+            @include styleButton($color-red-0, $color-red-0, $pd-1, $pd-2);
+            &:hover{
+                @include styleButtonHover($color-red-2, $color-white-0, $color-red-2);
+            }
+        }
+    }
+}

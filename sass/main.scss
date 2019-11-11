@@ -1,0 +1,17 @@
+@import './Helper/variable'; //Bien tao ra dau tien
+@import './Helper/mixin'; //Tao mixin thu 2
+
+@import './Base/reset';
+@import './Base/customize';
+
+@import './Component/button';
+@import './Layout/header';
+@import './Layout/carousel';
+@import './Layout/intro';
+@import './Layout/course';
+@import './Layout/student.scss';
+@import './Layout/recommendations';
+@import './Layout/topCategory';
+@import './Layout/feedBack';
+@import './Layout/trusted';
+@import './Layout/footer';
